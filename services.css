@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.h2
+{
+    position: absolute;
+    color: black;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    left: 35%;
+    margin-top: 50px;
+}
+.container
+{
+    position: relative;
+    height: 300px;
+}
+.container img
+{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+body
+{
+    min-height: 100vh;
+    background: white;
+}
+.sidebar
+{
+    position: absolute;
+    width: 60px;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sidebar:hover
+{
+    width: 300px;
+}
+.siderbar ul
+{
+    position: relative;
+    height: 100vh;
+}
+.sidebar ul li
+{
+    list-style: none;
+}
+.sidebar ul li:hover
+{
+    background: #f3f3f3;
+}
+.sidebar ul li a
+{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar ul li .icon
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: white;
+}
+.sidebar ul li .text
+{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.sidebar ul li.logo
+{
+    margin-bottom: 50px;
+}
+.sidebar ul li.logo:hover
+{
+    background: #fff;
+}
+.sidebar ul li.logo .icon
+{
+    font-size: 2em;
+}
+.sidebar ul li.logo .text
+{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.bottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+section
+{
+    width: 100%;
+    height: 100vh;
+}
+section .leftBox
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+    right: 10%;
+}
+section .leftBox .content
+{
+    color: #fff;
+    background: red;
+    padding: 40px;
+    transition: .5s;
+}
+section .leftBox .content:hover
+{
+    background: black;
+}
+section .leftBox .content p
+{
+    margin: 10px 0;
+    padding: 0;
+}
+section .events
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    float: right;
+    box-sizing: border-box;
+}
+section .events ul
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+section .events ul li
+{
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+section .events ul li .time
+{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+section .events ul li:hover .time
+{
+    background: #e91e63;
+}
+section .events ul li .time h2
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+section .events ul li .time h2 span
+{
+    font-size: 30px;
+}
+section .events ul li .details
+{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+section .events ul li .detaisl h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+section .events ul li .details p
+{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+section .events ul li .details a
+{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+}
+section .events ul li .details a:hover
+{
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
